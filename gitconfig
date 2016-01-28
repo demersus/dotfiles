@@ -1,0 +1,8 @@
+[user]
+	email = demersus@gmail.com
+	name = Nik Petersen
+[color]
+	ui = true
+[push]
+	default = simple
+
