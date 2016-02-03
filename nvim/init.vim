@@ -50,6 +50,7 @@ set expandtab
 set colorcolumn=80
 set backspace=2 " make backspace work like most other apps
 set laststatus=2
+set timeoutlen=1000 ttimeoutlen=0
 let g:solarized_termcolors=256
 
 " Colorscheme {
@@ -87,6 +88,8 @@ let g:airline_powerline_fonts = 1
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
+
+nnoremap <Leader>b :CtrlPBuffer<CR>
 
 
 " RSpec.vim mappings
