@@ -18,6 +18,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'easymotion/vim-easymotion'
+Plug 'kylef/apiblueprint.vim'
+Plug 'scrooloose/syntastic'
 call plug#end()
 " }
 
@@ -51,6 +53,10 @@ set colorcolumn=80
 set backspace=2 " make backspace work like most other apps
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
+set nowritebackup
+set nobackup
+set noswapfile
+
 let g:solarized_termcolors=256
 
 " Colorscheme {
