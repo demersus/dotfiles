@@ -60,11 +60,11 @@ set noswapfile
 let g:solarized_termcolors=256
 
 " Colorscheme {
-if has("gui_running")
-  set background=light
-else
+" if has("gui_running")
   set background=dark
-endif
+" else
+"   set background=dark
+" endif
 colorscheme solarized
 " }
 
