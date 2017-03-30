@@ -1,6 +1,7 @@
 
 " Plugins {
 call plug#begin('~/.vim-plugged')
+"Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
@@ -9,7 +10,6 @@ Plug 'godlygeek/tabular'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
-Plug 'townk/vim-autoclose'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-endwise'
 Plug 'sheerun/vim-polyglot'
@@ -18,14 +18,22 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'easymotion/vim-easymotion'
-Plug 'kylef/apiblueprint.vim'
 Plug 'scrooloose/syntastic'
+Plug 'ap/vim-css-color'
+Plug 'jacoborus/tender.vim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'rakr/vim-one'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 " }
 
+"let g:polyglot_disabled = ['handlebars']
+
 filetype indent plugin on
 syntax enable
-set t_Co=256
+"au BufNewFile,BufRead *.hbs,*.handlebars setfiletype handlebars
+
+set mouse=a
 set nu
 set backspace=indent,eol,start  " Backspace for dummies
 set linespace=0                 " No extra spaces between rows
@@ -53,19 +61,21 @@ set colorcolumn=80
 set backspace=2 " make backspace work like most other apps
 set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0
-set nowritebackup
-set nobackup
-set noswapfile
+"set nowritebackup
+"set nobackup
+"set noswapfile
+"
+set termguicolors
 
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 
 " Colorscheme {
 " if has("gui_running")
-  set background=dark
+"  set background=dark
 " else
-"   set background=dark
+   set background=dark
 " endif
-colorscheme solarized
+colorscheme one
 " }
 
 
@@ -88,7 +98,7 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 
 let g:mapleader = '\'
 
-let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_mode='a'
 
 let g:airline_powerline_fonts = 1
 

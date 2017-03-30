@@ -95,8 +95,8 @@ alias bex="bundle exec"
 # ===================
 
 # CHRUBY
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /usr/share/chruby/chruby.sh
+source /usr/share/chruby/auto.sh
 
 export EDITOR=nvim
 #export PATH="/home/nik/.npm/bin:/home/nik/bin:$PATH"
@@ -105,8 +105,8 @@ export TERM=xterm-256color
 [ -n "$TMUX" ] && export TERM=screen-256color
 
 # CAPS LOCK behavior
-setxkbmap -option 'caps:ctrl_modifier'
-xcape -e 'Caps_Lock=Escape'
+#setxkbmap -option 'caps:ctrl_modifier'
+#xcape -e 'Caps_Lock=Escape'
 
 # Restore ctrl+r after vi mode plugin
 bindkey \\C-R history-incremental-search-backward
@@ -115,4 +115,6 @@ export NVM_DIR="/home/nik/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=~~/Applications/dor/bin:~/bin:$PATH:$ANDROID_HOME/tools
+
+alias vim=nvim
