@@ -1,6 +1,0 @@
-Nik's Dot Files
-Do:
-cd ~
-git clone git://github.com/demersus/dotfiles.git
-dotfiles/install.sh
-

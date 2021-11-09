@@ -1,3 +1,0 @@
-alias tmux="tmux -2"
-alias solarize=~/.solarized/solarize.sh
-alias bex="bundle exec"
